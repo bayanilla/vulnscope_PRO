@@ -1,0 +1,14 @@
+{
+  "mode": "upload",
+  "input": "/tmp/claude-0/-home-user-vulnscope-PRO/faeccf34-11fd-5584-9162-b7d0b6ff51ef/scratchpad/data/over1g",
+  "request_bytes": 1468060603,
+  "status": null,
+  "location": null,
+  "error": null,
+  "note": "server closed the connection after 2097309 bytes: [Errno 104] Connection reset by peer no response: IncompleteRead(98304 bytes read, 178039 more expected)",
+  "upload_seconds": 0.0,
+  "total_seconds": 0.0,
+  "server_peak_rss": 26005504,
+  "server_alive": true,
+  "data_dir": "/tmp/claude-0/-home-user-vulnscope-PRO/faeccf34-11fd-5584-9162-b7d0b6ff51ef/scratchpad/web_runs"
+}

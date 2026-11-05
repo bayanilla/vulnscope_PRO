@@ -1,0 +1,15 @@
+{
+  "mode": "upload",
+  "input": "/tmp/claude-0/-home-user-vulnscope-PRO/faeccf34-11fd-5584-9162-b7d0b6ff51ef/scratchpad/data/m250M",
+  "request_bytes": 191497333,
+  "status": 303,
+  "location": "/runs/cb5dcb9bc8513a65/",
+  "error": null,
+  "note": "",
+  "upload_seconds": 0.16,
+  "total_seconds": 205.61,
+  "server_peak_rss": 6209916928,
+  "server_alive": true,
+  "data_dir": "/tmp/claude-0/-home-user-vulnscope-PRO/faeccf34-11fd-5584-9162-b7d0b6ff51ef/scratchpad/web_runs",
+  "run_dir_bytes": 1150896171
+}

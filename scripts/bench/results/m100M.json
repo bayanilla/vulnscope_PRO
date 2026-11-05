@@ -1,0 +1,156 @@
+{
+  "stages": {
+    "discover": {
+      "rss_start": 20910080,
+      "seconds": 0.0,
+      "rss_peak": 20910080,
+      "rss_end": 20914176,
+      "aborted": false
+    },
+    "parse+normalize": {
+      "rss_start": 20914176,
+      "hot": {
+        "paloalto.py:parse:89": 3,
+        "zeek.py:parse:126": 4,
+        "normalize.py:load:65": 1
+      },
+      "seconds": 12.6,
+      "rss_peak": 704614400,
+      "rss_end": 649781248,
+      "aborted": false,
+      "parse_seconds": 11.39,
+      "flows": 657450,
+      "threats": 464,
+      "zeek_events": 115955,
+      "ot_events": 0,
+      "findings": 0,
+      "duplicate_flows_removed": 13274,
+      "normalize_seconds": 1.21
+    },
+    "correlate": {
+      "rss_start": 649830400,
+      "hot": {
+        "correlate.py:run:374": 1,
+        "correlate.py:internal:42": 1,
+        "correlate.py:<genexpr>:444": 15
+      },
+      "seconds": 23.38,
+      "rss_peak": 666001408,
+      "rss_end": 666001408,
+      "aborted": false,
+      "hosts": 2000,
+      "findings_scored": 0,
+      "network_leads": 36
+    },
+    "report": {
+      "rss_start": 666001408,
+      "hot": {
+        "explore.py:__init__:42": 1,
+        "explore.py:build:183": 1,
+        "explore.py:_iso:71": 1,
+        "explore.py:build:205": 1,
+        "report.py:write_all:573": 2
+      },
+      "seconds": 20.99,
+      "rss_peak": 2285293568,
+      "rss_end": 950984704,
+      "aborted": false,
+      "outputs": {
+        "executive_summary.md": 7254,
+        "executive_summary.html": 285358,
+        "technical_report.md": 59601,
+        "technical_report.html": 390000,
+        "explorer.html": 269420630,
+        "results.json": 18527428,
+        "correlated_findings.csv": 272,
+        "normalized/flows.csv": 84065944,
+        "normalized/findings.csv": 138,
+        "normalized/zeek_events.jsonl": 57167268,
+        "normalized/ot_events.jsonl": 0
+      }
+    }
+  },
+  "files": [
+    {
+      "file": "paloalto/traffic_2026-10-01_00.csv",
+      "fmt": "paloalto",
+      "bytes": 23944601,
+      "seconds": 2.553,
+      "read": 157170,
+      "records": 157170,
+      "dropped": {},
+      "rss_after": 120184832
+    },
+    {
+      "file": "paloalto/traffic_2026-10-01_01.csv",
+      "fmt": "paloalto",
+      "bytes": 23973796,
+      "seconds": 2.629,
+      "read": 157351,
+      "records": 157351,
+      "dropped": {},
+      "rss_after": 220073984
+    },
+    {
+      "file": "zeek/2026-10-01/conn.00:00:00-00:59:59.log",
+      "fmt": "zeek",
+      "bytes": 20620725,
+      "seconds": 2.242,
+      "read": 178460,
+      "records": 178460,
+      "dropped": {},
+      "rss_after": 313028608
+    },
+    {
+      "file": "zeek/2026-10-01/conn.01:00:00-01:59:59.log.gz",
+      "fmt": "zeek",
+      "bytes": 6269279,
+      "seconds": 2.371,
+      "read": 178207,
+      "records": 178207,
+      "dropped": {},
+      "rss_after": 406700032
+    },
+    {
+      "file": "zeek/2026-10-01/dns.00:00:00-00:59:59.log.gz",
+      "fmt": "zeek",
+      "bytes": 2292544,
+      "seconds": 0.899,
+      "read": 57952,
+      "records": 57952,
+      "dropped": {},
+      "rss_after": 490614784
+    },
+    {
+      "file": "zeek/2026-10-01/dns.01:00:00-01:59:59.log.gz",
+      "fmt": "zeek",
+      "bytes": 2289085,
+      "seconds": 0.701,
+      "read": 58003,
+      "records": 58003,
+      "dropped": {},
+      "rss_after": 573161472
+    }
+  ],
+  "status": "ok",
+  "rss_limit": 5368709120,
+  "input": "/tmp/claude-0/-home-user-vulnscope-PRO/faeccf34-11fd-5584-9162-b7d0b6ff51ef/scratchpad/data/m100M",
+  "input_files": 6,
+  "input_bytes_on_disk": 79390030,
+  "by_format": {
+    "paloalto": {
+      "files": 2,
+      "read": 314521,
+      "kept": 314521,
+      "dropped": 0
+    },
+    "zeek": {
+      "files": 4,
+      "read": 472622,
+      "kept": 472622,
+      "dropped": 0
+    }
+  },
+  "total_seconds": 56.97,
+  "ru_maxrss": 2823962624
+}
